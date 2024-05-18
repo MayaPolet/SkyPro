@@ -3,13 +3,16 @@
 #
 from masks import mask_account, mask_card
 
+# import masks.mask_account
+# import masks.mask_card
+
 info1 = "Maestro 1596837868705199"
 info2 = "Счет 64686473678894779589"
 info3 = "MasterCard 7158300734726758"
 
 
 def mask_info(text_info: str) -> str:
-    """Маскирует номер карты/счета"""
+    """Маскирует номер карты/счета и возвращает строку с замаскированной инфой"""
     number_info: str
     mask: str
     info_mask: str
@@ -39,7 +42,7 @@ date_info1 = "2018-07-11T02:26:18.671407"
 
 
 def date_format(date_info: str) -> str:
-    """Форматирует дату"""
+    """Форматирует дату  в формат дд.мм.гггг"""
     date_formated = date_info[8:10] + "." + date_info[5:7] + "." + date_info[:4]
     return date_formated
 
