@@ -1,7 +1,7 @@
 # mask_info Принимать на вход строку с информацией — тип карты/счета и номер карты/счета.
 # Возвращать исходную строку с замаскированным номером карты/счета.
 #
-from masks import mask_account, mask_card
+from src.masks import mask_account, mask_card
 
 # import masks.mask_account
 # import masks.mask_card
